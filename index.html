@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуализация любой сложности</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" size="32x32" href="icons/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Навигационное меню -->
+        <nav>
+            <div class="navbar">
+                <div class="nav-container">
+                    <div class="nav__menu">
+                        <div class="nav__bar nav__bar--1">
+                        </div>
+                        <div class="nav__bar nav__bar--2">
+                        </div>
+                        <div class="nav__bar nav__bar--3">
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <li class="menu-item"><a href="#" class="title-20 border">Главная</a></li>
+                        <li class="menu-item"><a href="#" class="title-21">3D-Дизайн</a></li>
+                        <li class="menu-item"><a href="#" class="title-21">Ремонт</a></li>
+                        <li class="menu-item"><a href="#" class="title-21">Строительство</a></li>
+                        <li class="menu-item"><a href="#" class="title-21">Проекты</a></li>
+                        <li class="menu-item"><a href="#" class="title-21">Ландшафтный дизайн</a></li>
+                        <li class="menu-item">
+                            <ul class="feedback-icon-menu">
+                                <li><a href="#"><img src="icons/tg.svg" alt="feedback-icon"></a></li>
+                                <li><a href="#"><img src="icons/inst.svg" alt="feedback-icon"></a></li>
+                                <li><a href="#"><img src="icons/fc.svg" alt="feedback-icon"></a></li>
+                                <li><a href="#"><img src="icons/yt.svg" alt="feedback-icon"></a></li>
+                                <li><a href="#"><img src="icons/tt.svg" alt="feedback-icon"></a></li>
+                                <li><a href="#"><img src="icons/vb.svg" alt="feedback-icon"></a></li>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <a class="phone" href="#" id="phone-link"><img src="icons/phone.svg" alt="phone"></a>
+                    <div id="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="modal-block">
+                                <h2 class="title-5">Обратный звонок</h2>
+                                <form>
+                                    <input class="title-6" type="text" id="name" name="name" placeholder="Ваше имя"
+                                        required>
+                                    <input class="title-6" type="tel" id="phone" name="phone"
+                                        placeholder="Номер телефона" required>
+                                    <a href="" class="btn" type="submit">Позвонить мне</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <img class="logo-header" src="icons/Logo.svg" alt="logo">
+        <!-- Начало контейнера -->
+        <div class="container">
+            <div class="header-block">
+                <h1 class="header-title title-3">Лучшее для лучших</h1>
+                <div class="header-btn">
+                    <a class="title-22 btn-animation" href="#projects">Проекты</a>
+                    <a class="title-22 btn-animation" href="#price">Расчитать стоимость</a>
+                </div>
+            </div>
+            <!-- Конец контейнера -->
+        </div>
+    </header>
+    <!-- Начало контейнера -->
+    <div class="container">
+        <!-- Секция информация -->
+        <section class="info">
+            <ul class="info-list">
+                <li class="info-item">
+                    <h2 class="title-7">100+</h2>
+                    <div class="info-item__text">
+                        <div class="square-info"></div>
+                        <h3 class="title-5">Реализованные проекты</h3>
+                    </div>
+                    <p>Работаем с любой недвижимостью – от дворцов до квартир</p>
+                </li>
+                <li class="info-item">
+                    <h2 class="title-7">10 лет</h2>
+                    <div class="info-item__text">
+                        <div class="square-info"></div>
+                        <h3 class="title-5">Безупречная репутация</h3>
+                    </div>
+                    <p>Наши специалисты постоянно стажируются у лидеров строительных работ</p>
+                </li>
+                <li class="info-item">
+                    <h2 class="title-7">3 года</h2>
+                    <div class="info-item__text">
+                        <div class="square-info"></div>
+                        <h3 class="title-5">Гарантии на все работы</h3>
+                    </div>
+                    <p>Мы внимательно изучаем рынок отделочных материалов и инновационной техники
+                    </p>
+                </li>
+                <li class="info-item">
+                    <h2 class="title-7">Сроки</h2>
+                    <div class="info-item__text">
+                        <div class="square-info"></div>
+                        <h3 class="title-5">Процесс</h3>
+                    </div>
+                    <p>Нужно лучшее – закажи это у лучших!</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Конец контейнера -->
+    </div>
+    <!-- Секция прайс -->
+    <section id="price" class="price">
+        <div class="price-line line"></div>
+        <div class="container">
+            <h2 class="price-title title-2">СТОИМОСТЬ ПРОЕКТА</h2>
+            <div class="price-block">
+                <div class="price-left">
+                    <h2 class="title-1">Узнайте стоимость дизайн-проекта, ответив на 3 вопроса</h2>
+                    <p class="title-price">Пройдите короткий тест, узнайте цену, получите консультацию по будущему
+                        проекту
+                    </p>
+                    <a class="btn-price" href="#">Узнать стоимость</a>
+                    <div id="modal1" class="modal">
+                        <div class="modal-container">
+                            <span class="close">&times;</span>
+                            <h2 class="title-10"><span>Вопрос 1:</span> Какой размер помещения вашего проекта?</h2>
+                            <form class="form" id="step1">
+                                <div class="modal-one">
+                                    <ul class="modal1-list">
+                                        <li>
+                                            от 50 до 80 м2
+                                            <div class="toparrow">&harr;</div>
+                                            <div class="rightarrow">&harr;</div>
+                                        </li>
+                                        <li>
+                                            от 80 до 120 м2
+                                            <div class="toparrow">&harr;</div>
+                                            <div class="rightarrow">&harr;</div>
+                                        </li>
+                                        <li>
+                                            более 120 м2
+                                            <div class="toparrow">&harr;</div>
+                                            <div class="rightarrow">&harr;</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                            <div class="modul-btn">
+                                <button class="none"></button>
+                                <button class="next btn-modul">Далее</button>
+                            </div>
+                            <div class="slider">
+                                <ul class="square-list">
+                                    <li class="square-one"></li>
+                                    <li class="square-one"></li>
+                                    <li class="square-one"></li>
+                                    <li class="square-one"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal2" class="modal">
+                        <div class="modal-container">
+                            <span class="close">&times;</span>
+                            <h2 class="title-10"><span>Вопрос 2:</span> Какой стиль лучше подходит для вашего проекта?
+                            </h2>
+                            <ul class="modal2-list">
+                                <li class="moDAL2-item">
+                                    <img src="img/style1.jpg" alt="img-modal2">
+                                    <p>Минимализм</p>
+                                </li>
+                                <li class="moDAL2-item">
+                                    <img src="img/style2.jpg" alt="img-modal2">
+                                    <p>Скандинавский стиль</p>
+                                </li>
+                                <li class="moDAL2-item">
+                                    <img src="img/style3.jpg" alt="img-modal2">
+                                    <p>Стиль Лофт</p>
+                                </li>
+                                <li class="moDAL2-item">
+                                    <img src="img/style4.jpg" alt="img-modal2">
+                                    <p>Минимализм</p>
+                                </li>
+                                <li class="moDAL2-item">
+                                    <img src="img/style5.jpg" alt="img-modal2">
+                                    <p>Скандинавский стиль</p>
+                                </li>
+                                <li class="moDAL2-item">
+                                    <img src="img/style6.jpg" alt="img-modal2">
+                                    <p>Стиль Лофт</p>
+                                </li>
+                            </ul>
+                            <div class="modul-btn">
+                                <button class="back btn-modul"><span>Назад</span></button>
+                                <button class="next btn-modul">Далее</button>
+                            </div>
+                            <div class="slider">
+                                <ul class="square-list">
+                                    <li class="square-two"></li>
+                                    <li class="square-two"></li>
+                                    <li class="square-two"></li>
+                                    <li class="square-two"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal3" class="modal">
+                        <div class="modal-container">
+                            <span class="close">&times;</span>
+                            <h2 class="title-10"><span>Вопрос 3:</span> Когда примерно планируете начать работы <br> над
+                                проектом?</h2>
+                            <form class="form" id="step3">
+                                <div class="modal3-text">
+                                    <p>Уже нужно</p>
+                                    <p>В течении месяца</p>
+                                    <p>В течении недели</p>
+                                    <p>Более 3-ех месяцев</p>
+                                </div>
+                            </form>
+                            <div class="modul-btn">
+                                <button class="back btn-modul"><span>Назад</span></button>
+                                <button class="next btn-modul">Далее</button>
+                            </div>
+                            <div class="slider">
+                                <ul class="square-list">
+                                    <li class="square-three"></li>
+                                    <li class="square-three"></li>
+                                    <li class="square-three"></li>
+                                    <li class="square-three"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal6" class="modal">
+                        <div class="modal-box">
+                            <div class="modal6-container">
+                                <div class="modal6-left">
+                                    <div class="modal6-left-top">
+                                        <h2 class="title-11 modal6-title">Завершение</h2>
+                                        <p class="title-10 modal6-text">Заполните ваши данные для обратной связи и
+                                            мы вам позвоним</p>
+                                        <form class="modal6-form">
+                                            <div class="user-box">
+                                                <input type="tel" name="phone" required="phone"
+                                                    placeholder="Введите ваш номер телефона">
+                                                <label>Введите ваш номер телефона</label>
+                                            </div>
+                                            <div class="user-box">
+                                                <input type="email" name="email" required="email"
+                                                    placeholder="Введите ваш E-mail">
+                                                <label>Введите ваш E-mail</label>
+                                            </div>
+                                            <input class="feedback-modal" type="checkbox" id="politic"
+                                                onclick="check();" value="" autocomplete="off" />
+                                            <label class="politic" for="politic">
+                                                Я согласен на <a href="#" target="_blank">обработку персональных
+                                                    данных</a>
+                                            </label>
+                                        </form>
+                                    </div>
+                                    <div class="modal6-left-bot">
+                                        <a class="btn-modal6-application" href="#">
+                                            Оставить заявку
+                                        </a>
+                                    </div>
+                                </div>
+                                <span class="close">&times;</span>
+                                <div class="modal6-right">
+
+                                    <div class="catalog">
+                                        <div class="catalog-img">
+                                            <img class="catalog-img__bg" src="img/catalog.jpg" alt="img">
+                                            <img class="catalog-img__logo" src="icons/Logo.svg" alt="logo">
+                                        </div>
+                                        <p>Каталог работ</p>
+                                    </div>
+                                    <div class="catalog">
+                                        <div class="catalog-img">
+                                            <img class="catalog-img__bg" src="img/selection.jpg" alt="img">
+                                            <img class="catalog-img__logo" src="icons/Logo.svg" alt="logo">
+                                        </div>
+                                        <p>Подборка дизайна</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modul-btn">
+                                <button class="btn-modul-que">Задать вопрос менеджеру</button>
+                                <button class="start-over btn-modul6">Вернуться к началу</button>
+                            </div>
+
+                        </div>
+                        <div class="slider4">
+                            <ul class="square-list">
+                                <li class="square-four"></li>
+                                <li class="square-four"></li>
+                                <li class="square-four"></li>
+                                <li class="square-four"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-right">
+                    <div class="figure price-figure"></div>
+                    <div class="triangle price-triangle"></div>
+                    <div class="price-right__text">
+                        <ul class="title-9">Бонусы:
+                            <li class="title-8">чек листы на 5 ошибок <br> в строительстве</li>
+                            <li class="title-8">5 трендов 2021 года на дизайн <br> интерьеров</li>
+                        </ul>
+                    </div>
+                    <div class="line-vertical"></div>
+                    <div class="line-horizontal"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция сервис -->
+    <section class="services">
+        <div class="services-line line"></div>
+        <div class="container services-container">
+            <h2 class="services-title title-2">ОСНОВНЫЕ УСЛУГИ</h2>
+            <div class="services-block">
+                <div class="services-box">
+                    <img src="img/services1.jpg" alt="img">
+                    <div class="services-content">
+                        <h2 class="services-box__title title-12">3D-дизайн</h2>
+                        <div class="services__text">
+                            <div class="square-services"></div>
+                            <p class="title-13">Идейные соображения высшего порядка, а также внедрение современных
+                                методик
+                                обеспечивает актуальность глубокомысленных рассуждений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <img src="img/services2.jpg" alt="img">
+                    <div class="services-content">
+                        <h2 class="services-box__title title-12">Ремонт</h2>
+                        <div class="services__text">
+                            <div class="square-services"></div>
+                            <p class="title-13">Мы вынуждены отталкиваться от того, что глубокий уровень погружения
+                                допускает
+                                внедрение своевременного выполнения сверхзадачи.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <img src="img/services3.jpg" alt="img">
+                    <div class="services-content">
+                        <h2 class="services-box__title title-12">Строительство</h2>
+                        <div class="services__text">
+                            <div class="square-services"></div>
+                            <p class="title-13">Мы вынуждены отталкиваться от того, что глубокий уровень погружения
+                                допускает
+                                внедрение своевременного выполнения сверхзадачи.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <img src="img/services4.jpg" alt="img">
+                    <div class="services-content">
+                        <h2 class="services-box__title title-12">Ландшафтный дизайн</h2>
+                        <div class="services__text">
+                            <div class="square-services"></div>
+                            <p class="title-13">Идейные соображения высшего порядка обеспечивает актуальность
+                                глубокомысленных рассуждений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Секция проекты -->
+    <section id="projects" class="projects">
+        <div class="projects-line line"></div>
+        <div class="project-box"></div>
+        <div class="container">
+            <h2 class="projects-title title-2">НАШИ ПРОЕКТЫ</h2>
+            <div class="projects-container">
+                <div class="projects-content">
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects1.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Академической</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">130 м2</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects2.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Рижской</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Скандинавский</h3>
+                            <p class="projects-text__size">94 м2</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects3.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Чистых прудах</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">68 м2</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects4.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Рижской</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Скандинавский</h3>
+                            <p class="projects-text__size">94 м2</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects5.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Чистых прудах</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">85 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects6.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Академической</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">108 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects1.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Академической</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">130 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects2.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Рижской</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Скандинавский</h3>
+                            <p class="projects-text__size">94 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects3.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Чистых прудах</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">68 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects4.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Рижской</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Скандинавский</h3>
+                            <p class="projects-text__size">94 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects5.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Чистых прудах</h2>
+                            <h3 class="projects-text__title title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">85 м2</p>
+                        </div>
+                    </div>
+                    <div class="projects-block">
+                        <div class="card">
+                            <div class="elms-animation">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                                <span class="four"></span>
+                            </div>
+                            <img src="img/projects6.jpg" alt="img">
+                            <div class="content">
+                                <button class="title-4">Смотреть проект</button>
+                            </div>
+                        </div>
+                        <div class="projects-text">
+                            <h2 class="projects-text__title title-5">Квартира на Академической</h2>
+                            <h3 class="projects-text__style title-4">Стиль - Лофт</h3>
+                            <p class="projects-text__size">108 м2</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="projects-btn" id="show-more-btn">
+                    <img src="icons/update.svg" alt="update">
+                    Еще проекты
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция этапы -->
+    <section class="stages">
+        <div class="stages-line line"></div>
+        <div class="container">
+            <h2 class="stages-title title-2">6 ЭТАПОВ ОТ ЗАЯВКИ ДО <br> СДАЧИ ГОТОВОГО ОБЪЕКТА</h2>
+
+            <div class="stages-block">
+
+                <div class="stages-box">
+                    <div class="stages-box__number">
+                        <p class="title-16">01</p>
+                    </div>
+                    <div class="stages-box__content">
+                        <img src="icons/stages1.svg" alt="icon">
+                        <h2 class="stages-box__title title-15">Заявка</h2>
+                        <p class="stages-box__text title-17">Оставляйте заявку на сайте и получите 2 варианта планировки
+                            квартиры
+                            БЕСПЛАТНО</p>
+                        <div class="stages-input">
+                            <input class="stages-checkbox" type="checkbox" id="stages-checkbox1" checked disabled>
+                            <label class="title-18" for="stages-checkbox1">Оставить заявку</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages-box">
+                    <div class="stages-box__number">
+                        <p class="title-16">02</p>
+                    </div>
+                    <div class="stages-box__content">
+                        <img src="icons/stages2.svg" alt="icon">
+                        <h2 class="stages-box__title title-15">Дизайн</h2>
+                        <p class="stages-box__text title-17">Собираете на сайте стиль
+                            из четырех готовых решений
+                            с возможностью редактирования</p>
+                        <div class="stages-input">
+                            <input class="stages-checkbox" type="checkbox" id="stages-checkbox2" checked disabled>
+                            <label class="title-18" for="stages-checkbox2">Выбрать дизайн</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages-box">
+                    <div class="stages-box__number">
+                        <p class="title-16">03</p>
+                    </div>
+                    <div class="stages-box__content">
+                        <img src="icons/stages3.svg" alt="icon">
+                        <h2 class="stages-box__title title-15">Расчет</h2>
+                        <p class="stages-box__text title-17">Расчитываете финальную стоимость ремонта с помощью
+                            онлайн-калькулятора</p>
+                        <div class="stages-input">
+                            <input class="stages-checkbox" type="checkbox" id="stages-checkbox3" checked disabled>
+                            <label class="title-18" for="stages-checkbox3">Посчитать</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages-dottedline"></div>
+                <div class="stages-dottedline__top1"></div>
+                <div class="stages-dottedline__top2"></div>
+                <div class="stages-dottedline__top3"></div>
+
+                <div class="stages-box">
+                    <div class="stages-box__number">
+                        <p class="title-16">04</p>
+                    </div>
+                    <div class="stages-box__content">
+                        <img src="icons/stages4.svg" alt="icon">
+                        <h2 class="stages-box__title title-15">Договор</h2>
+                        <p class="stages-box__text title-17">Собираете на сайте стиль
+                            из четырех готовых решений
+                            с возможностью редактирования</p>
+                        <div class="stages-input">
+                            <input class="stages-checkbox" type="checkbox" id="stages-checkbox4" checked disabled>
+                            <label class="title-18" for="stages-checkbox4">Оставить заявку</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages-box">
+                    <div class="stages-box__number">
+                        <p class="title-16">05</p>
+                    </div>
+                    <div class="stages-box__content">
+                        <img src="icons/stages5.svg" alt="icon">
+                        <h2 class="stages-box__title title-15">Ремонт</h2>
+                        <p class="stages-box__text title-17">Собираете на сайте стиль
+                            из четырех готовых решений
+                            с возможностью редактирования</p>
+                        <div class="stages-input">
+                            <input class="stages-checkbox" type="checkbox" id="stages-checkbox5" checked disabled>
+                            <label class="title-18" for="stages-checkbox5">Оставить заявку</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages-box">
+                    <div class="stages-box__number">
+                        <p class="title-16">06</p>
+                    </div>
+                    <div class="stages-box__content">
+                        <img src="icons/stages6.svg" alt="icon">
+                        <h2 class="stages-box__title title-15">Сдача объекта</h2>
+                        <p class="stages-box__text title-17">Расчитываете финальную стоимость ремонта с помощью
+                            онлайн-калькулятора</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button" id="button-7">
+                <a href="#">Начать</a>
+                <div id="dub-arrow">&#10230;</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Мы там где -->
+    <section class="where">
+        <div class="where-block">
+            <div class="where-title">МЫ ТАМ, ГДЕ:</div>
+
+            <div class="where-text">
+                <div class="square"></div>
+                <div class="where-text__title">Требуется высокое качество ремонтных работ
+                </div>
+            </div>
+            <div class="where-text">
+                <div class="square"></div>
+                <div class="where-text__title">Нужно четко соблюсти Бюджет
+                </div>
+            </div>
+            <div class="where-text">
+                <div class="square"></div>
+                <div class="where-text__title">Необходимо ответственно подойти к процессу</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Секция инстаграм -->
+    <section class="instagram">
+        <div class="container">
+            <img class="instagram-logo" src="icons/instagram-logo.svg" alt="instagram-logo">
+            <div class="instagram-block">
+                <img src="img/inst1.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst2.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst3.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst4.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst5.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst6.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst7.jpg" alt="instagram" class="instagram-img">
+                <img src="img/inst8.jpg" alt="instagram" class="instagram-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="feedback-line line"></div>
+        <div class="container">
+            <h2 class="feedback-title title-2">ПОЛУЧИТЕ КАТАЛОГ <br> НАШИХ ПРОЕКТОВ</h2>
+            <div class="feedback-block">
+                <div class="feedback-block__left">
+                    <img src="img/feedback.jpg" alt="feedback">
+                </div>
+                <div class="feedback-block__right">
+                    <div class="feedback-top">
+                        <h2 class="feedback-right-title">Оставьте ваш E-mail, чтобы получить каталог наших
+                            проектов
+                        </h2>
+                        <p class="feedback-right-text">
+                            Каталог поможет вам выбрать стиль и продумать планировку квартиры
+                        </p>
+                    </div>
+                    <form class="modal6-form">
+                        <div class="user-box">
+                            <input class="modal-6-form" type="email" name="email" required="email"
+                                placeholder="Введите ваш E-mail">
+                            <label>Введите ваш E-mail</label>
+                        </div>
+                        <p>
+                            <input class="feedback-modal" type="checkbox" id="politics" onclick="check();" value=""
+                                autocomplete="off" />
+                            <label for="politic">
+                                Я согласен на <a href="#" target="_blank">обработку персональных
+                                    данных</a>
+                            </label>
+                        </p>
+                    </form>
+                    <a class="btn-modal6-application btn-feedback" href="#">
+                        Получить каталог
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer-block">
+            <div class="footer-left">
+                <img src="icons/Logo.svg" alt="logo" class="footer-logo logo">
+                <div class="footer-link">
+                    <ul class="footer-title title-19">Компания gid
+                        <li><a class="title-13" href="">О нас</a></li>
+                        <li><a class="title-13" href="">Наша команда</a></li>
+                        <li><a class="title-13" href="">История</a></li>
+                    </ul>
+                    <ul class="footer-title title-19">Проекты
+                        <li><a class="title-13" href="">Квартиры</a></li>
+                        <li><a class="title-13" href="">Коттеджы</a></li>
+                        <li><a class="title-13" href="">Офисы</a></li>
+                        <li><a class="title-13" href="">Рестораны</a></li>
+                    </ul>
+                    <ul class="footer-title title-19">Услуги
+                        <li><a class="title-13" href="">Квартиры</a></li>
+                        <li><a class="title-13" href="">Коттеджы</a></li>
+                        <li><a class="title-13" href="">Офисы</a></li>
+                        <li><a class="title-13" href="">Рестораны</a></li>
+                    </ul>
+                    <ul class="footer-title title-19">Контакты
+                        <li><a class="nav__feedback__phone title-24" href="tel:+74955551505">+(7495) 555-15-05
+                            </a></li>
+                        <li><a type=" mailto:order@trendsoft.ru" class="nav__feedback__mail title-24"
+                                href="info@gid.pro">info@gid.pro
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <ul class="feedback-icon">
+                    <li><a href="#"><img src="icons/tg-black.svg" alt="feedback-icon icon-footer"></a></li>
+                    <li><a href="#"><img src="icons/inst-black.svg" alt="feedback-icon icon-footer"></a></li>
+                    <li><a href="#"><img src="icons/fc-black.svg" alt="feedback-icon icon-footer"></a></li>
+                    <li><a href="#"><img src="icons/yt-black.svg" alt="feedback-icon icon-footer"></a></li>
+                    <li><a href="#"><img src="icons/tt-black.svg" alt="feedback-icon icon-footer"></a></li>
+                    <li><a href="#"><img src="icons/vb-black.svg" alt="feedback-icon icon-footer"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="figure footer-figure"></div>
+        <div class="triangle footer-triangle"></div>
+        <div class="footer-small-text">Gid.group 2021/ All rights reserved</div>
+
+        <div class="btn-up btn-up_hide title-4">
+            Наверх
+            <div class="uarr">&rarr;</div>
+        </div>
+    </footer>
+
+    <!-- Анимация загрузки страницы
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

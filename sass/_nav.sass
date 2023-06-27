@@ -1,0 +1,201 @@
+.navbar
+  width: 100%
+  height: 10.4rem
+  background: rgba(0, 0, 0, 0.4)
+
+.nav-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.navbar .nav-container li
+  list-style: none
+
+.navbar .nav-container a
+  text-decoration: none
+  &:hover
+    font-weight: bolder
+
+.nav-container
+  display: block
+  position: relative
+  height: 10.4rem
+
+.nav__menu
+  position: absolute
+  top: 2.6rem
+  left: 10.3rem
+  width: 3.6rem
+  cursor: pointer
+  z-index: 1000
+
+.nav__bar
+  height: .3rem
+  width: 100%
+  margin: 1rem 0
+  background-color: $color-gray-icon
+
+.nav__bar--1,
+.nav__bar--3
+  width: 50%
+
+.nav__bar--1
+  margin-left: auto
+  transform-origin: top right
+  transition: 0.3s transform
+
+.nav__bar--2
+  transition: 0.3s transform
+
+.nav__bar--3
+  transform-origin: bottom left
+  transition: 0.3s transform
+
+.nav__menu--active .nav__bar--1
+  transform: translate(-8px, 1px) rotate(312deg)
+
+.nav__menu--active .nav__bar--2
+  transform: rotate(45deg)
+
+.nav__menu--active .nav__bar--3
+  transform: translate(8px, -1px) rotate(310deg)
+
+.menu-items
+  display: none
+  transition: transform 0.5s ease-in-out
+
+.menu-items.show
+  display: flex
+  flex-direction: column
+  background: black
+  opacity: .9
+  padding-top: 27rem
+  height: 108rem
+  width: 100%
+  padding-left: 5rem
+  transform: translateX(0)
+  text-align: center
+
+.hide
+  display: none
+
+.menu-item
+  margin-bottom: 5rem
+  z-index: 1000
+  &:last-child
+    margin-bottom: 0
+    &:nth-child(6)
+      margin-bottom: 7.9rem
+  a
+    color: $color-gray-small
+    text-align: center
+
+.border
+  border: .1rem solid $color-gray-light
+  color: $color-gray-light !important
+  padding: 2rem 7.7rem
+
+.phone
+  position: absolute
+  height: 2.9rem
+  width: 2.9rem
+  top: 3.8rem
+  right: 12.5rem
+  z-index: 10000
+
+#modal
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  opacity: 10000
+  background-color: rgba(0, 0, 0, 0.4)
+
+.modal-content
+  background-color: #fefefe
+  margin: 10% auto
+  padding: 2rem
+  border: .1rem solid #888
+  width: 50%
+  position: relative
+  h2
+    margin-bottom: 4.6rem
+  form
+    display: flex
+    flex-direction: column
+    background: rgba(255, 255, 255, 0.95)
+    align-items: center
+  input
+    border: .2rem solid $color-black
+    padding: 2.6rem 0 2.6rem 3.8rem
+    margin-bottom: 2rem
+    width: 62rem
+  span
+    margin-top: 2.9rem
+    margin-right: 5.5rem
+
+#phone
+  margin-bottom: 3.7rem
+
+.modal-open
+  overflow: hidden
+
+.modal-block
+  padding: 10.9rem 24rem 13.6rem 22.1rem
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  h2
+    color: $color-black
+    text-align: center
+
+.close:hover,
+.close:focus
+  color: black
+  text-decoration: none
+  cursor: pointer
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items
+  transform: translateX(0)
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1
+  transform: rotate(45deg)
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2
+  transform: scaleY(0)
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3
+  transform: rotate(-45deg)
+
+  .nav-container input[type="checkbox"]:checked ~ &
+    display: none
+
+.feedback-icon
+  display: flex
+  flex-direction: row
+  justify-content: center
+  color: $color-gray-icon
+  li
+    width: 4.1rem
+    height: 4.1rem
+    margin-right: 6.5rem
+    &:last-child
+      margin-right: 0
+
+.feedback-icon-menu
+  display: flex
+  flex-direction: row
+  justify-content: center
+  color: $color-gray-icon
+  li
+    width: 4.1rem
+    height: 4.1rem
+    margin-right: 6.5rem
+    &:last-child
+      margin-right: 0

@@ -1,0 +1,102 @@
+.footer
+  width: 100%
+  position: relative
+  height: 105.3rem
+
+.footer-figure
+  position: absolute
+  width: 65%
+  height: 104rem
+  bottom: 0
+  left: 0
+  z-index: -1000
+
+.footer-triangle
+  top: 1rem
+  left: 46%
+  width: 10%
+  height: 20%
+  z-index: -1000
+
+.footer-logo
+  width: 18.4rem
+  height: 7.66rem
+  margin-bottom: 5.8rem
+
+.footer-block
+  display: flex
+  flex-direction: row
+  padding-top: 42rem
+
+.footer-left
+  width: 55%
+
+.footer-title
+  margin-bottom: 4.1rem
+
+.footer-link
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.footer-title
+  list-style: none
+  a
+    color: $color-gray-light
+  li:nth-child(1)
+    margin-top: 4.1rem
+
+.footer-right
+  li
+    list-style: none
+    color: $color-black
+    &:first-child
+      margin-left: 14rem
+
+.footer-small-text
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+  font-size: 1.4rem
+  line-height: 145.19%
+  color: $color-black
+  position: absolute
+  bottom: 1rem
+  left: 50%
+
+.btn-up
+  position: absolute
+  right: 2rem
+  bottom: 70%
+  border: .1rem solid $color-black
+  cursor: pointer
+  width: 18.5rem
+  height: 7rem
+  transform: rotate(-90deg)
+  color: $color-black
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: transform 0.3s ease
+
+  &:hover
+    transform: scale(1.1) rotate(-90deg)
+
+  & .uarr
+    font-size: 5rem
+    margin-left: 0.5rem
+    justify-content: center
+    padding-bottom: 0.5rem
+    transition: color 0.3s ease
+
+  &:hover .uarr
+    color: $color-gray-icon
+
+  &_hide
+    display: none
+
+.feedback-icon li
+  width: 4.1rem
+  height: .4.1rem
+  img
+    width: 100%
+    height: 100%
